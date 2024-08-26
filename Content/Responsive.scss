@@ -1,0 +1,261 @@
+﻿@media (max-width: 1400px) {
+  #menu_product a {
+    margin-left: 0px;
+    font-size: 18px;
+    font-weight: 400;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  .menu_main li a {
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .sub_menu_product {
+    overflow-x: hidden;
+
+    li a {
+      font-weight: 400;
+      margin-left: 0px;
+      font-size: 18px;
+    }
+  }
+  .new_price {
+    font-size: 15px;
+  }
+  .old_price {
+    font-size: 15px;
+  }
+}
+@media (max-width: 992px) {
+  .header_mb {
+    display: block;
+  }
+
+  .header_lg {
+    display: none;
+  }
+
+  .menu_mb {
+    height: 100vh;
+    overflow-y: auto;
+    left: -50%;
+    position: fixed;
+    width: 50%;
+    padding-bottom: 70px;
+    transition: all 1s;
+    z-index: 1000;
+
+    &.active {
+      left: 0px;
+    }
+
+    ul {
+      padding: 0px;
+
+      li {
+        &:hover {
+          background-color: blue;
+        }
+
+        background-color: red;
+        list-style-type: none;
+        border-bottom: 1px solid white;
+
+        a {
+          margin-left: 20px;
+          display: block;
+          color: white;
+          text-decoration: none;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+
+  .sub_menu_product2_mb {
+    padding: 0px !important;
+
+    li {
+      padding: 10px 0px;
+      background-color: darkslategray !important;
+      padding-left: 10px;
+
+      &:hover {
+        background-color: deepskyblue !important;
+      }
+    }
+  }
+
+  .overlay {
+    position: fixed;
+    right: -100%;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 90;
+    transition: all 1s;
+
+    &.active {
+      right: 0px;
+    }
+  }
+
+  .hamburger {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    z-index: 99;
+
+    .bar {
+      position: absolute;
+      width: 30px;
+      height: 3px;
+      background: #000;
+      border-radius: 3px;
+      transition: all 0.5s;
+
+      &:nth-child(1) {
+        transform: translateY(-10px);
+        width: 20px;
+        left: 10px;
+      }
+
+      &:nth-child(2) {
+        transform: translateY(10px);
+        width: 15px;
+        left: 10px;
+      }
+    }
+
+    &.active {
+      .bar {
+        background: red;
+
+        &:nth-child(1) {
+          width: 30px;
+          transform: translateY(0) rotate(45deg);
+        }
+
+        &:nth-child(2) {
+          width: 30px;
+          transform: translateY(0) rotate(315deg);
+        }
+
+        &:nth-child(3) {
+          transform: translateX(60px);
+        }
+      }
+    }
+  }
+
+  .search_mb {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1px solid red;
+    background-color: gray;
+    padding: 25px 10%;
+    width: 100%;
+    z-index: 100;
+  }
+
+  .search_input {
+    height: auto;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .btn_search_mb {
+    position: absolute;
+    right: 10%;
+    color: #f00;
+    font-size: 30px;
+    border: 0;
+    background-color: transparent;
+  }
+
+  .close_search {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    padding: 0px 7px;
+  }
+
+  .show_search {
+    background-color: transparent;
+    font-size: 30px;
+    padding: 15px;
+    border: none;
+  }
+
+  #banner {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+
+    img {
+      height: auto;
+      aspect-ratio: 7/3;
+    }
+  }
+
+  .top_intro {
+    text-align: center;
+    font-size: 14px;
+
+    h6 {
+      font-size: 16px;
+    }
+  }
+
+  .menu_product {
+    width: 100%;
+  }
+
+  .max_img {
+    img {
+      height: auto;
+      aspect-ratio: 1;
+      border: 1px solid gray;
+    }
+  }
+
+  .mini_img {
+    margin-bottom: 10px;
+
+    img {
+      height: auto;
+      width: 90%;
+      aspect-ratio: 1;
+      border: 1px solid gray;
+    }
+  }
+  .see_all {
+    z-index: 10;
+  }
+}
+@media (max-width: 768px) {
+  .titel_pro {
+    font-size: 18px;
+    width: 900px;
+  }
+  .see_all {
+    font-size: 16px;
+    color: white;
+  }
+  .menu_mb {
+    left: -100%;
+    width: 100%;
+  }
+  .choise_product {
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  .menu_foot {
+    display: none;
+  }
+}
