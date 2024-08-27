@@ -157,8 +157,8 @@
     position: absolute;
     top: 0;
     left: 0;
-    border: 1px solid red;
-    background-color: gray;
+    border: 1px solid whitesmoke;
+    background-color: whitesmoke;
     padding: 25px 10%;
     width: 100%;
     z-index: 100;
@@ -168,22 +168,27 @@
     height: auto;
     max-width: 100%;
     width: 100%;
+    border: none;
+    border-radius: 5px;
   }
 
   .btn_search_mb {
     position: absolute;
     right: 10%;
-    color: #f00;
+    color: gray;
     font-size: 30px;
     border: 0;
     background-color: transparent;
   }
 
   .close_search {
+    border: none;
+    background-color: transparent;
     position: absolute;
     top: 2px;
     right: 2px;
     padding: 0px 7px;
+    color: gray;
   }
 
   .show_search {

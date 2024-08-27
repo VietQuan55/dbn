@@ -228,7 +228,9 @@ $(".overlay").click(function () {
   $(".menu_mb").removeClass("active");
   $(".hamburger").removeClass("active");
 });
-
+$(".show_search").click(function () {
+  $(".search_mb").show();
+});
 $(".close_search").click(function () {
   $(".search_mb").hide();
 });
