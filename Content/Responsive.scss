@@ -27,6 +27,9 @@
   }
 }
 @media (max-width: 992px) {
+  .list_img_ver {
+    margin: 10px;
+  }
   .header_mb {
     display: block;
   }
@@ -244,6 +247,9 @@
   }
 }
 @media (max-width: 768px) {
+  .tel {
+    display: none;
+  }
   .titel_pro {
     font-size: 18px;
     width: 900px;

@@ -234,3 +234,11 @@ $(".show_search").click(function () {
 $(".close_search").click(function () {
   $(".search_mb").hide();
 });
+$(window).scroll(function () {
+  var e = $(window).scrollTop();
+  if (e > 300) {
+    $(".back_to_top").show();
+  } else {
+    $(".back_to_top").hide();
+  }
+});
